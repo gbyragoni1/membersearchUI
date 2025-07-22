@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MemberSearch from './components/MemberSearch'
+import RouterErrorBoundary from './components/RouterErrorBoundary'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MemberSearch />,
+    errorElement: <RouterErrorBoundary />
+  },
+  {
+    path: '/members',
+    element: <MemberSearch />,
+    errorElement: <RouterErrorBoundary />
+  },
+]
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Row>
+        <RouterProvider router={router} />
+      </Row>
+  </Container>
   );
 }
 

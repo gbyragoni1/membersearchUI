@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "dist/types",
+    "paths": {
+      "tsx-ui-hooks/*": ["src/shared/hooks/*"],
+      "tsx-ui-styled/*": ["src/shared/styled/*"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "es2018",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node"],
+    "useUnknownInCatchVariables": false
+  },
+  "include": ["src", "typings", "cypress"],
+  "exclude": ["node_modules"]
+}

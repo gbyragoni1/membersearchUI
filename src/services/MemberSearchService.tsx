@@ -20,6 +20,9 @@ const instance = axios.create({
 
   export const getMembersById = async (id:string) => {
     try {
+        if (!id){
+            id = '999';
+        }
       const response = await instance.get('/members/search/'+ id);
       return response.data;
     } catch (error) {

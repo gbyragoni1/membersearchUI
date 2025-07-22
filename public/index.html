@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -10,24 +14,78 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/@massds/mayflower-assets@14.0.0/css/brand-banner.css"
+    />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+
     <title>Member Search</title>
+    <script
+            type="text/javascript"
+            src="https://unpkg.com/@massds/mayflower-assets@14.0.0/js/brand-banner.js"
+    ></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="ma__brand-banner ma__brand-banner--c-primary-bg-dark">
+      <button
+              class="ma__brand-banner-container"
+              aria-controls="ma__brand-banner-content"
+              aria-expanded="false"
+      >
+
+        <span class="ma__brand-banner-text">
+      <span>Branded header</span>
+      <span>   </span>
+      <span
+              class="ma__brand-banner-button ma__button-icon ma__icon-small ma__button-icon--quaternary ma__button-icon--c-white"
+      >
+
+      <ul class="ma__brand-banner-expansion" id="ma__brand-banner-content">
+        <li class="ma__brand-banner-expansion-item">
+          <svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 16 16"
+                  fill="#fff"
+          >
+            <path
+                    d="M8.73 1.592V0H7.27v1.592c-2.06.364-3.63 2.239-3.63 4.503h8.72c0-2.264-1.57-4.14-3.63-4.503zm6.54 9.837h-2.18V8.38c0-.42-.32-.762-.73-.762H3.64c-.41 0-.73.341-.73.762v3.048H.73c-.4 0-.73.34-.73.761v3.048c0 .421.33.762.73.762h14.54c.4 0 .73-.34.73-.762v-3.047c0-.421-.33-.762-.73-.762zM2.91 14.476H1.45v-1.524h1.46zm2.91 0H4.36v-1.524h1.46zm0-3.81H4.36V9.144h1.46zm2.91 3.81H7.27v-1.524h1.46zm0-3.81H7.27V9.144h1.46zm2.91 3.81h-1.46v-1.524h1.46zm0-3.81h-1.46V9.144h1.46zm2.91 3.81h-1.46v-1.524h1.46z"
+            ></path>
+          </svg>
+          <div class="ma__brand-banner-expansion-item-content">
+            <p>Official websites use .mass.gov</p>
+            <p>
+              A .mass.gov website belongs to an official government organization in
+              Massachusetts.
+            </p>
+          </div>
+        </li>
+        <li class="ma__brand-banner-expansion-item">
+          <svg
+                  width="30"
+                  height="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 21 25"
+                  aria-hidden="true"
+                  fill="#fff"
+          >
+            <path
+                    d="M10.399 0a6.491 6.491 0 016.487 6.258l.004.233-.001 3.853h2.077c.952 0 1.724.773 1.724 1.725v11.207c0 .952-.772 1.724-1.724 1.724H1.724A1.724 1.724 0 010 23.276V12.069c0-.952.772-1.724 1.724-1.724l2.184-.001V6.491l.004-.233A6.491 6.491 0 0110.4 0zm0 1.517A4.974 4.974 0 005.43 6.275l-.005.216v3.853h9.947V6.491l-.004-.216a4.974 4.974 0 00-4.97-4.758z"
+                    fill-rule="evenodd"
+            ></path>
+          </svg>
+
+        </li>
+      </ul>
+    </div>
+
+
+
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

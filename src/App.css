@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+.noto-sans-<uniquifier> {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.section1-header {
+  color: #0057B8;
+  font-family: 'Arial Black', Arial, sans-serif;
+  background: #f2f7fc;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.section1-table {
+  border: 2px solid #0057B8;
+  background: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.section1-table td {
+  padding: 10px;
+  border: 1px solid #bcdffb;
+}
+
+.section1-table strong {
+  color: #0057B8;
+}
